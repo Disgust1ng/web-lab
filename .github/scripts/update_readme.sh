@@ -4,6 +4,8 @@ FREQ_RESULT=$1
 GITHUB_USER=$2
 TIMESTAMP=$(date)
 
+echo "DEBUG RESULT: $FREQ_RESULT"
+
 echo -e "\n$GITHUB_USER - $FREQ_RESULT - $TIMESTAMP" >> README.md
 
 git config --global user.name "github-actions"
