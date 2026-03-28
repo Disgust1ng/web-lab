@@ -1,0 +1,9 @@
+name: "Vowel Analyzer"
+
+inputs:
+  file:
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
