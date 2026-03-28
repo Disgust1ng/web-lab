@@ -2,10 +2,10 @@
 
 echo "Starting Frequency Analyzer..."
 
-FREQ_RESULT=$(python3 /app/.github/scripts/frequency.py /app/data.txt)
+FREQ_RESULT=$(python3 .github/scripts/frequency.py data.txt)
 
-echo "RESULT: $FREQ_RESULT"   # 👈 ADD THIS LINE (for debugging)
+echo "RESULT: $FREQ_RESULT"
 
-bash /app/.github/scripts/update_readme.sh "$FREQ_RESULT" "$GITHUB_USER"
+bash .github/scripts/update_readme.sh "$FREQ_RESULT" "$GITHUB_USER"
 
 echo "Done!"
